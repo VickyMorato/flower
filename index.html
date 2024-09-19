@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para minha querida Dalia</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #121212; /* Fundo escuro */
+            color: white; /* Cor do texto padrão */
+        }
+
+        /* Estilos para o título com borda fina preta */
+        h1 {
+            color: #E0E0E0; /* Cor do título */
+            font-family: 'Arial', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 
+                0 0 10px #9400D3, /* Brilho neon roxo */
+                0 0 20px #9400D3,
+                0 0 30px #9400D3,
+                -1px -1px 0 #000, /* Borda preta mais visível */
+                1px 1px 0 #000;
+        }
+
+        /* Estilos para a imagem da flor */
+        img {
+            max-width: 400px; /* Aumentei o tamanho da imagem */
+            border-radius: 15px;
+            box-shadow: 0 0 15px #9400D3;
+            transition: transform 0.5s ease; /* Transição suave ao aplicar transformações */
+            opacity: 0; /* Começa invisível */
+        }
+
+        /* Efeito de hover na imagem (ampliar ao passar o mouse) */
+        img:hover {
+            transform: scale(1.1); /* Ampliar a imagem ao passar o mouse */
+        }
+
+        /* Estilos para a citação */
+        .quote {
+            color: white; /* Cor do texto da citação */
+            font-family: 'Arial', sans-serif; /* Fonte padrão */
+            font-size: 0.70rem; /* Tamanho da fonte ajustado */
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+            border-radius: 10px; /* Bordas arredondadas */
+            max-width: 90%; /* Limita a largura da citação */
+            overflow-wrap: break-word; /* Quebra de palavras longas */
+            text-shadow: 
+                0 0 10px white, /* Brilho neon branco */
+                0 0 20px white,
+                0 0 30px white; /* Efeito neon */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título da página -->
+    <h1>Para minha querida Dalia</h1>
+
+    <!-- Imagem da flor -->
+    <img id="flower" src="dalia.jpg" alt="Flor Dalia">
+
+    <!-- Citação de Edgar Allan Poe -->
+    <div class="quote">
+        "No silêncio da noite sombria,<br>
+        Quando meus sonhos são pó e saudade,<br>
+        Surge o corvo, e sua fria melodia<br>
+        Me sussurra uma amarga verdade.<br><br>
+
+        "Lenore!" — clamo, em desespero,<br>
+        Meu coração, pesado e em dor.<br>
+        Mas o corvo, eterno mensageiro,<br>
+        Responde apenas: "Nunca mais, meu senhor."<br><br>
+
+        Ah, doce Lenore, que em vida amei,<br>
+        Teus olhos, tão puros, perdidos estão.<br>
+        E o corvo, cruel, ao qual implorei,<br>
+        Só me oferece a escuridão.<br><br>
+
+        "Será que no além eu irei encontrá-la?"<br>
+        Pergunto com o coração a sangrar.<br>
+        Mas o corvo, com sua voz que cala,<br>
+        Ecoa "Nunca mais" — me faz chorar.<br><br>
+
+        E assim, preso à sombra e à agonia,<br>
+        Vivo sem fim, na noite a vagar,<br>
+        Pois o corvo roubou minha alegria,<br>
+        E Lenore... nunca mais irá voltar."
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Selecionar a imagem
+        const flowerImg = document.getElementById('flower');
+
+        // Animação suave de entrada da imagem
+        window.onload = function() {
+            flowerImg.style.opacity = '0';
+            setTimeout(() => {
+                flowerImg.style.transition = 'opacity 2s ease';
+                flowerImg.style.opacity = '1'; // Torna a imagem visível
+            }, 100); // Pequeno atraso para a transição ser visível
+        }
+    </script>
+
+</body>
+</html>
+
+
+
